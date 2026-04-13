@@ -19,7 +19,7 @@ import { useI18n } from '@/contexts/i18n'
 import type { MenuCategory, MenuItem } from '@/data/menu'
 
 type MainScreen = 'welcome' | 'storytelling' | 'categories' | 'dish'
-type NavScreen = 'home' | 'menu' | 'reservations' | 'gallery' | 'location' | 'about' | 'reviews'
+type NavScreen = 'home' | 'menu' | 'reservations' | 'gallery' | 'location'
 type AppScreen = MainScreen | 'about' | 'reservations' | 'location' | 'gallery' | 'reviews'
 
 export default function Home() {
@@ -28,6 +28,7 @@ export default function Home() {
   const [activeCategory, setActiveCategory] = useState<MenuCategory | null>(null)
   const [activeDish, setActiveDish] = useState<MenuItem | null>(null)
   const [showParticles, setShowParticles] = useState(false)
+  const [extraPage, setExtraPage] = useState<'about' | 'reviews' | null>(null)
   const { locale } = useI18n()
 
   const handleEnterMenu = useCallback(() => {
@@ -65,6 +66,14 @@ export default function Home() {
 
   // Determine which screen to render
   const renderContent = () => {
+    // Extra pages (about, reviews)
+    if (extraPage === 'about') {
+      return <AboutChef onBack={() => setExtraPage(null)} />
+    }
+    if (extraPage === 'reviews') {
+      return <Reviews onBack={() => setExtraPage(null)} />
+    }
+
     // Nav-driven screens
     if (navScreen === 'reservations') {
       return <Reservations onBack={handleBackToNav} />
@@ -74,12 +83,6 @@ export default function Home() {
     }
     if (navScreen === 'location') {
       return <Location onBack={handleBackToNav} />
-    }
-    if (navScreen === 'about') {
-      return <AboutChef onBack={handleBackToNav} />
-    }
-    if (navScreen === 'reviews') {
-      return <Reviews onBack={handleBackToNav} />
     }
 
     // Main flow screens
