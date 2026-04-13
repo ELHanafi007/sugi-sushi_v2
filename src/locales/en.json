@@ -1,0 +1,132 @@
+{
+  "common": {
+    "enterMenu": "Enter Menu",
+    "language": "العربية",
+    "back": "Back",
+    "close": "Close",
+    "allergens": "Allergens",
+    "chefNote": "Chef's Note",
+    "price": "Price",
+    "sar": "SAR",
+    "about": "Our Story",
+    "reservations": "Reservations",
+    "location": "Visit Us",
+    "gallery": "Gallery",
+    "reviews": "Reviews"
+  },
+  "hero": {
+    "welcome": "Welcome to",
+    "restaurantName": "Sugi Sushi",
+    "subtitle": "A refined journey through Japanese culinary artistry"
+  },
+  "storytelling": {
+    "line1": "Born from Tokyo's most guarded secrets",
+    "line2": "Every cut is intentional",
+    "line3": "Every ingredient, a pilgrimage",
+    "line4": "This is not dinner. This is devotion.",
+    "line5": "Begin your experience"
+  },
+  "categories": {
+    "title": "The Menu",
+    "subtitle": "Select a chapter"
+  },
+  "menu": {
+    "viewDish": "Discover",
+    "backToCategory": "Back to {category}",
+    "ingredients": "Key Ingredients",
+    "pairing": "Suggested Pairing",
+    "search": "Search dishes...",
+    "filterAll": "All",
+    "filterGlutenFree": "Gluten Free",
+    "filterDairyFree": "Dairy Free",
+    "filterSignature": "Signature",
+    "popular": "Popular",
+    "aboutChef": "Meet the Chef"
+  },
+  "about": {
+    "subtitle": "The Artist Behind the Counter",
+    "title": "Chef Takeshi",
+    "paragraph1": "For over fifteen years, Chef Takeshi pursued the art of sushi across Tokyo's most revered kitchens. Trained under third-generation masters in Ginza, he learned that every grain of rice carries intention, and every cut tells a story that began long before it reached the plate.",
+    "paragraph2": "Now in the heart of Saudi Arabia, he brings a lifetime of devotion to Sugi Sushi — where tradition meets the bold ambition of a new culinary frontier. Each evening is an act of precision, respect, and quiet rebellion against the ordinary.",
+    "philosophyTitle": "The Three Pillars",
+    "philosophy": "Every dish at Sugi Sushi is guided by three principles that Chef Takeshi has refined over decades of practice. These are not rules — they are a way of seeing food.",
+    "awardsTitle": "Recognition",
+    "quote": "The ocean gives us its best. My job is to listen, not to interfere.",
+    "quoteAuthor": "Chef Takeshi"
+  },
+  "reservations": {
+    "subtitle": "Secure Your Table",
+    "title": "Reservations",
+    "name": "Full Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "date": "Date",
+    "time": "Time",
+    "selectTime": "Select a time",
+    "guests": "Guests",
+    "guest": "Guest",
+    "guestsCount": "Guests",
+    "occasion": "Occasion",
+    "occasionNone": "None (optional)",
+    "occasionBirthday": "Birthday",
+    "occasionAnniversary": "Anniversary",
+    "occasionBusiness": "Business Dinner",
+    "occasionOther": "Other",
+    "requests": "Special Requests",
+    "requestsPlaceholder": "Allergies, seating preferences, celebrations...",
+    "submit": "Reserve Your Table",
+    "submitting": "Confirming...",
+    "errorName": "Please enter your name",
+    "errorEmail": "Please enter a valid email",
+    "errorPhone": "Please enter your phone number",
+    "errorDate": "Please select a date",
+    "errorTime": "Please select a time",
+    "successTitle": "Reservation Confirmed",
+    "successMessage": "We'll send a confirmation to your email shortly. We look forward to welcoming you to Sugi Sushi.",
+    "newReservation": "Make Another Reservation"
+  },
+  "location": {
+    "subtitle": "Find Us",
+    "title": "Visit Sugi Sushi",
+    "openMaps": "Open in Google Maps",
+    "address": "Address",
+    "addressLine1": "Prince Mohammed bin Abdulaziz St, Al Olaya District",
+    "addressLine2": "Riyadh 12211, Saudi Arabia",
+    "hoursTitle": "Opening Hours",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "note": "Omakase seating is limited to 8 guests per evening. We recommend booking at least one week in advance. Walk-ins are welcome at the bar, subject to availability."
+  },
+  "gallery": {
+    "subtitle": "Behind the Scenes",
+    "title": "Gallery",
+    "all": "All",
+    "food": "Dishes",
+    "space": "Space",
+    "chef": "Chef",
+    "drinks": "Drinks"
+  },
+  "reviews": {
+    "subtitle": "What They Say",
+    "title": "Reviews",
+    "ratingText": "Based on 200+ reviews",
+    "allReviews": "Recent Reviews"
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "reservations": "Reserve",
+    "gallery": "Gallery",
+    "location": "Visit"
+  },
+  "footer": {
+    "note": "Prices are inclusive of VAT. A 10% service charge applies.",
+    "allergyNote": "Please inform us of any allergies before ordering."
+  }
+}

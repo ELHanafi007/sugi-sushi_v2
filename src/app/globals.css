@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+/* ============================================================
+   SUGI SUSHI LUXURY — Global Styles
+   Japanese Zen × Apple Minimalism
+   ============================================================ */
+
+@theme inline {
+  --color-obsidian: #0A0A0A;
+  --color-ink: #111111;
+  --color-charcoal: #1A1A1A;
+  --color-slate-deep: #2A2A2A;
+  --color-surface: #141414;
+  --color-surface-light: #1E1E1E;
+  --color-surface-elev: #242424;
+
+  --color-gold: #C9A96E;
+  --color-gold-light: #D4BA8A;
+  --color-gold-dark: #A68B5B;
+  --color-gold-glow: rgba(201, 169, 110, 0.15);
+
+  --color-text-primary: #F5F0EB;
+  --color-text-secondary: #A8A09A;
+  --color-text-tertiary: #6B6560;
+  --color-text-inverse: #0A0A0A;
+
+  --color-divider: rgba(201, 169, 110, 0.12);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'IBM Plex Sans Arabic', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Noto Naskh Arabic', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --ease-cinematic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-obsidian);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(201, 169, 110, 0.3);
+  color: var(--color-text-primary);
+}
+
+/* ── Scrollbar — Invisible luxury ── */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+/* ── Focus — Accessible but invisible ── */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* ── RTL Support ── */
+[dir="rtl"] {
+  font-family: 'IBM Plex Sans Arabic', var(--font-sans);
+}
+
+[dir="rtl"] .font-serif {
+  font-family: 'Noto Naskh Arabic', var(--font-serif);
+}
+
+/* ── Utility: Prevent FOUC ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Loading state ── */
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface) 0%,
+    var(--color-surface-light) 50%,
+    var(--color-surface) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Ambient glow ── */
+.gold-glow {
+  box-shadow: 0 0 60px rgba(201, 169, 110, 0.08);
+}
+
+/* ── Cinematic letterbox (for hero) ── */
+.cinematic-bars::before,
+.cinematic-bars::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  background: var(--color-obsidian);
+  z-index: 10;
+}
+
+.cinematic-bars::before { top: 0; }
+.cinematic-bars::after { bottom: 0; }
