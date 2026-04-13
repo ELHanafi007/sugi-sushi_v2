@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useI18n } from '@/contexts/i18n'
 
@@ -36,7 +36,6 @@ export function Reservations({ onBack }: ReservationsProps) {
   const [errors, setErrors] = useState<FormErrors>({})
   const [submitted, setSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const containerRef = useRef<HTMLDivElement>(null)
 
   const timeSlots = [
     '18:00', '18:30', '19:00', '19:30', '20:00',
@@ -197,7 +196,6 @@ export function Reservations({ onBack }: ReservationsProps) {
 
       {/* ── Reservation Form ── */}
       <motion.form
-        ref={containerRef}
         onSubmit={handleSubmit}
         className="px-6 max-w-lg mx-auto space-y-6"
       >
